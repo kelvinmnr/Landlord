@@ -10,12 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190903205437) do
+ActiveRecord::Schema.define(version: 20190904093207) do
 
   create_table "maintainances", force: :cascade do |t|
     t.string "name"
     t.string "area"
     t.string "problem"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "maintanances", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
